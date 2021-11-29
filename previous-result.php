@@ -251,7 +251,7 @@ else
        <table id="example"  >
                                       
        <h2>Previous Result</h2> 
-           <p class="form-horizontal">&nbsp&nbspThis result is based on your symptoms.If you want to know better check again.</p>
+           <p class="form-horizontal">&nbsp&nbspThis result is based on your poultry symptoms.If you want to know better check again.</p>
            
                                                     <tbody>
 <?php $sql = "SELECT  *from disease_tb where id=$resultname";
@@ -287,7 +287,7 @@ foreach($results as $result)
 Disclaimer :
 Please note that the information provided by this tool is provided solely for educational purposes
 and is not a &nbspqualified medical opinion. This information should not be considered advice or an opinion 
-of a doctor or other health &nbspprofessional about your actual medical state, and you should see a doctor 
+of a vet or other health &nbspprofessional about your actual medical state, and you should see a doctor
 for any symptoms you may have. If you are &nbspexperiencing a health emergency, you should call your local 
 &nbspemergency number immediately to request emergency medical &nbspassistance.</p>
 

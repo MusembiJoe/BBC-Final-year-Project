@@ -1,9 +1,9 @@
-<?php 
+<?php
 // DB credentials.
 define('DB_HOST','localhost');
 define('DB_USER','root'); 
 define('DB_PASS','');
-define('DB_NAME','disease');
+define('DB_NAME','kuku');
 // Establish database connection.
 try
 {

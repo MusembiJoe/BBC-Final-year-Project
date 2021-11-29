@@ -35,7 +35,7 @@ include('link/config.php');
 
 
        <form class="form-horizontal" action="hand-symptoms2.php" method="post">
-       <h2> Please check all the symptoms below that apply to you </h2>
+       <h2> Please check all the symptoms below that apply to your Poultry </h2>
            <p>Select one answer in each row. </p>
 
        <table id="example"  cellspacing="2" width="100%">

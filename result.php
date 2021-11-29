@@ -26,6 +26,7 @@ if(strlen($_SESSION['alogin'])=="")
         <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" >
         <link rel="stylesheet" type="text/css" href="js/DataTables/datatables.min.css"/>
         <link rel="stylesheet" href="css/main.css" media="screen" >
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="js/modernizr/modernizr.min.js"></script>
         <style>
              
@@ -204,7 +205,7 @@ foreach($results as $result)
  <!-- <?php echo htmlentities($cnt);?> -->
                  <h2>SUGGESTED DISEASE </h2>
                  <h3 class="result-color">&nbsp &nbsp<?php echo htmlentities($result->disease_name);?></h3><br>
-                 <h2>CAUSE</h2>                                 
+                 <h2>CAUSE</h2>                                 $mainresult
              <h2 > <td class="result-color1"><?php echo htmlentities($result->cause);?></td><h2>
               
                                                             
@@ -217,7 +218,7 @@ foreach($results as $result)
                                                      </tbody>
                                                 </table>
 
- <!-- <input type="hidden" name="var1" value="<?php echo htmlentities($mainresult);?>"/> -->
+  <input type="hidden" name="var1" value="<?php echo htmlentities($mainresult);?>"/>
 
  <p> &nbsp&nbsp 
 DISCLAIMER :
@@ -507,43 +508,44 @@ foreach($results as $result)
 
  <!-- <input type="hidden" name="var1" value="<?php echo htmlentities($mainresult);?>"/> -->
 
- <p> &nbsp&nbsp 
-Disclaimer :
-Please note that the information provided by this tool is provided solely for educational purposes
-and is not a &nbspqualified medical opinion. This information should not be considered advice or an opinion 
-of a doctor or other health &nbspprofessional about your actual medical state, and you should see a doctor 
-for any symptoms you may have. If you are &nbspexperiencing a health emergency, you should call your local 
-&nbspemergency number immediately to request emergency medical &nbspassistance.</p>
+ <p> &nbsp&nbsp If your poultry does not portray the given symptoms .. Please click on view more below to view more symptoms </br>
+     To view more Symptoms Images and cause of diseases that your poultry maybe suffering from</p>
 
 
- <div class="flex-p-inside">
 
-<div class="flex-p-2">
-<button type="submit" name="submit" >Save your Result</button>
 
-</div>
-</div>
+
      </form>
- 
+
+           <div class="flex-p-inside">
+
+               <div class="flex-p-0">
+                   <button ><a href="more-symptoms1.php"><b style="color:white">Select More Symptoms</b></a> </button>
+
+               </div>
+           </div>
+
+           <div class="flex-p-inside">
+
+           <div class="flex-p-2">
+               <button ><a href="web-curl.php"><b style="color:white">Explore New Symptoms</b></a> </button>
+
+           </div>
+       </div>
+
 
      <div class="flex-p-inside">
 
-<div class="flex-p-1">
+<div class="flex-p-0">
 <button ><a href="feedback.php"><b style="color:white">Give us your Feedback</b></a> </button>
 
 </div>
 </div>
 
-
-
-
-
-
-
       </div>
 
 
-        <!-- /.main-wrapper -->
+            <!-- /.main-wrapper -->
         <script src="js/jquery-2.2.4.min.js"></script>
 
         <script src="js/main.js"></script>

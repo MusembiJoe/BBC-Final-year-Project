@@ -25,7 +25,7 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-  echo "<script>alert('Admin Added Succssfully');</script>";
+  echo "<script>alert('Admin Added Successfully');</script>";
 }
 else 
 {

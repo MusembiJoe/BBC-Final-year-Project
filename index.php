@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
     <head>  
-        <title>Disease Prediction System </title>
+        <title>Poultry Disease Prediction and Diagnosis System </title>
         <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" >
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/login.css">
@@ -30,13 +30,13 @@ button{
         <section class="container content">
             <div class="hompage">
             
-            <h2>What concerns you about your health today ?</h2>
-            <p>Check your symptoms and find out what could be 
-                causing them ,It's fast ,free and anonymous.
+            <h2>Welcome To Kukutreat ?</h2>
+            <p>Check your poultry symptoms and find out what could be
+                causing them ,It's fast, effective and efficient.
             </p>
             <ul>
             <li><button class="homepage-button"onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a>Login as Admin</a></button></li>
-           <li> <button class="homepage-button"><a href="intro.php">Start Checkups</a></button></li>
+           <li> <button class="homepage-button"><a href="intro.php">Start Diagnosis</a></button></li>
            
             </ul>
       </div>

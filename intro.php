@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <title>Welcome to the disease Prediction System</title>
+        <title>Welcome to the Poultry disease Prediction and Diagnosis System</title>
         <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" >
         <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" >
         <link rel="stylesheet" type="text/css" href="js/DataTables/datatables.min.css"/>
@@ -147,10 +147,8 @@ li{
 
 <div class="content-p">
    
- <ul> <li><h2>HELLOW !!!</h2></li>
-     <li><p>You’re about to use a short , safe and anonymous health checkup.
-              Your answers will be carefully analyzed and you’ll learn about 
-              possible causes of your symptoms.&nbsp&nbsp</p></li>
+ <ul> <li><h2>HELLO !!!</h2></li>
+     <li><p>Welcome to This platform, It offers an accurate , efficient and effective way to carry out Poultry diagnosis. Hope you fond it helpful.. ENJOY THE EXPERIENCE!!&nbsp&nbsp</p></li>
 
 </ul>
 
@@ -162,7 +160,7 @@ li{
 </div>
 
 <div class="flex-p-inside">
-<h5><b style="color:red;font-weight:900px;">NOTE : &nbsp</b><b>Here, you can login or check annonymously. If you don't have any account in this system then you can registered yourself. Registered users can get lot advantage than annonymous users. If you are already registered then simply login by putting your userID and Password. It's easy and free..</b></h5>
+<h5><b style="color:red;font-weight:900px;">NOTE : &nbsp</b><b>Here is the log in page. It provides every user with a platform to register an account that later one can use to log into the system. Try it now It's easy!!</b></h5>
 
 <div class="flex-p-1">
 <li><a href="index.php" ><button><<</button></li>

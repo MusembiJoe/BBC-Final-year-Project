@@ -17,42 +17,43 @@ if(strlen($_SESSION['alogin'])=="")
     <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Show Diseaae </title>
+        <title>Show Disease </title>
         <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" >
         <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" >
         <link rel="stylesheet" type="text/css" href="js/DataTables/datatables.min.css"/>
         <link rel="stylesheet" href="css/form-content.css" media="screen" >
         <link rel="stylesheet" href="css/main.css" media="screen" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="js/modernizr/modernizr.min.js"></script>
-          <style>
-        .errorWrap {
-    padding: 10px;
-    margin: 0 0 20px 0;
-    background: #fff; 
-    border-left: 4px solid #dd3d36;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-}
-.succWrap{
-    padding: 10px;
-    margin: 0 0 20px 0;
-    background: #fff;
-    border-left: 4px solid #5cb85c;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-}
-.button {     
-    background-color: red;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;        
-} 
-h5{
-    background-color:white;
-    font-weight:900;
-}
-        </style>
+<!--          <style>-->
+<!--        .errorWrap {-->
+<!--    padding: 10px;-->
+<!--    margin: 0 0 20px 0;-->
+<!--    background: #fff; -->
+<!--    border-left: 4px solid #dd3d36;-->
+<!--    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);-->
+<!--    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);-->
+<!--}-->
+<!--.succWrap{-->
+<!--    padding: 10px;-->
+<!--    margin: 0 0 20px 0;-->
+<!--    background: #fff;-->
+<!--    border-left: 4px solid #5cb85c;-->
+<!--    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);-->
+<!--    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);-->
+<!--}-->
+<!--.button {     -->
+<!--    background-color: red;-->
+<!--    background-repeat:no-repeat;-->
+<!--    border: none;-->
+<!--    cursor:pointer;-->
+<!--    overflow: hidden;        -->
+<!--} -->
+<!--h5{-->
+<!--    background-color:white;-->
+<!--    font-weight:900;-->
+<!--}-->
+<!--        </style>-->
     </head>
     <body class="top-navbar-fixed">
         <div class="main-wrapper">
@@ -91,14 +92,14 @@ else if($error){?>
                                         <?php } ?>
                                             <div class="panel-body p-20">
 
-                                                <table id="example"  cellspacing="0" width="100%">
-                                                    <thead>
+                                                <table id="" class="table text-white table-bordered" >
+                                                    <thead class="thead-dark">
                                                         <tr>
                                                             
-                                                            <th class="result-color1">Disease Id</th>
-                                                            <th class="result-color1">Disease Name </th>
-                                                            <th class="result-color1">Cause </th>
-                                                            <th class="result-color1">Action</th>
+                                                            <th scope="col">Disease Id</th>
+                                                            <th scope="col">Disease Name </th>
+                                                            <th scope="col">Cause </th>
+                                                            <th scope="col">Action</th>
                                                         </tr>
                                                     </thead>
   
@@ -114,13 +115,13 @@ foreach($results as $result)
 {   ?>
 <tr> 
  <!-- <td><?php echo htmlentities($cnt);?></td> -->
-                                                            <td class="result-color1"><?php echo htmlentities($result->disease_id);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->disease_name);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->cause);?></td>
+                                                            <th scope="row"><?php echo htmlentities($result->disease_id);?></th>
+                                                            <td><?php echo htmlentities($result->disease_name);?></td>
+                                                            <td><?php echo htmlentities($result->cause);?></td>
 
-<td class="result-color1">
-<a href="edit_disease.php?stid=<?php echo htmlentities($result->id);?>"><i class="far fa-edit" title="Edit"></i></a> 
-<a href="delete_disease.php?stid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class="fas fa-trash-alt" title="Delete"></i> </a>
+<td>
+<a class="btn btn-primary" href="edit_disease.php?stid=<?php echo htmlentities($result->id);?>">Edit</a>
+<a class="btn btn-danger mt-1" href="delete_disease.php?stid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Are you sure you want to delete this item?');">Delete </a>
 
 </td>
 </tr>
@@ -170,7 +171,11 @@ foreach($results as $result)
         <script src="js/main.js"></script>
         <script>
             $(function($) {
-                $('#example').DataTable();
+                $('#example').DataTable({
+                    "scrollY":        "300px",
+                    "scrollCollapse": true,
+                    "paging":         false
+                } );
 
                 $('#example2').DataTable( {
                     "scrollY":        "300px",

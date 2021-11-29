@@ -111,7 +111,7 @@ if(($_POST[7])=="Yes")
                                       
   
                                                     <tbody>
-<?php $sql = "SELECT symptoms_tb.symptoms_id,symptoms_tb.symptoms_name from symptoms_tb where id IN (334,338,337,122,342,46,343)";
+<?php $sql = "SELECT symptoms_tb.symptoms_id,symptoms_tb.symptoms_name from symptoms_tb where id IN (11,12,13,14,15,16)";
 
 $query = $dbh->prepare($sql);
 $query->execute();

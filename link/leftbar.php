@@ -1,32 +1,35 @@
 <!Doctype html>
 <head>
 <link rel="stylesheet" href="css/all.min.css" media="screen" >
-<style>
-.left-sidebar{
-    background-color:white;
-    box-shadow:2px 3px 3px 1px black;
-    margin-top:0px;
-    }
-    
-    li {
-        color:black;
-        padding:5px;
-    }
- 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-</style>
+
+<!--<style>-->
+<!--.left-sidebar{-->
+<!--    background-color:midnightblue;-->
+<!--    box-shadow:2px 3px 3px 1px black;-->
+<!--    margin-top:0px;-->
+<!--    }-->
+<!---->
+<!--    li {-->
+<!--        color:white;-->
+<!--        padding:5px;-->
+<!--    }-->
+<!---->
+<!---->
+<!--</style>-->
 <head>
 <div class="left-sidebar bg-white-500 box-shadow ">
-                        <div class="sidebar-content">
+                        <div class="sidebar-content" >
                             <div class="user-info closed">
                                 <img src="http://placehold.it/90/c2c2c2?text=User" alt="John Doe" class="img-circle profile-img">
                             </div>
                             <!-- /.user-info -->
 
-                            <div class="sidebar-nav">
-                                <ul class="side-nav color-gray">
-                                    <li> 
-                                        <a href="admin_edit_choice.php"> <span>Dashboard</span> </a> 
+                             <div class="w3-sidebar w3-amber w3-bar" style="width:25%">
+                                <ul class="side-nav color-blue">
+                                    <li>
+                                        <a href="admin_edit_choice.php" class="w3-bar-item> <span>Dashboard</span> </a>
                                      
                                     </li>
 
@@ -53,4 +56,7 @@
                         </div>
                         <!-- /.sidebar-content -->
                     </div>
-                    </html>
+    </head>
+    </head>
+
+    </html>

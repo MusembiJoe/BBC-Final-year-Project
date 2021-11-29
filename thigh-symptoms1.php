@@ -41,7 +41,7 @@ include('link/config.php');
                                       
   
                                                     <tbody>
-<?php $sql = "SELECT symptoms_tb.symptoms_id,symptoms_tb.symptoms_name from symptoms_tb where id IN(332,69,335,121,329,112,340,344)";
+<?php $sql = "SELECT symptoms_tb.symptoms_id,symptoms_tb.symptoms_name from symptoms_tb where id IN(1,2,3,4,5,6)";
 $query = $dbh->prepare($sql);
 $query->execute(); 
 $results=$query->fetchAll(PDO::FETCH_OBJ);

@@ -45,6 +45,7 @@ $error="Something went wrong. Please try again";
         <link rel="stylesheet" type="text/css" href="js/DataTables/datatables.min.css"/>
         <link rel="stylesheet" href="css/form-content.css" media="screen" >
         <link rel="stylesheet" href="css/main.css" media="screen" >
+        
         <script src="js/modernizr/modernizr.min.js"></script>
         <style>
             body{

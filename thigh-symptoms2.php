@@ -92,7 +92,7 @@ $ed10=0;
        <table id="example"  cellspacing="2" width="100%">                                  
    
                                                     <tbody>
-<?php $sql = "SELECT symptoms_tb.symptoms_id,symptoms_tb.symptoms_name from symptoms_tb where id IN (333,120,336,129,315,341,325)";
+<?php $sql = "SELECT symptoms_tb.symptoms_id,symptoms_tb.symptoms_name from symptoms_tb where id IN (7,8,9,10)";
  
 $query = $dbh->prepare($sql);
 $query->execute();

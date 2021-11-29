@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect("localhost", "root", "", "disease");
+$link = mysqli_connect("localhost", "root", "", "kuku");
 
 
  

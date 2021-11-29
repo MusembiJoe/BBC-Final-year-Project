@@ -2,6 +2,7 @@
 session_start();
 error_reporting(0);
 include('link/config.php');
+$pdo = require_once './link/config.php';
 
 if(strlen($_SESSION['alogin'])=="") 
     {   
@@ -19,8 +20,10 @@ $sql="INSERT INTO  disease_tb(disease_id,disease_name,cause) VALUES(:uniqueid,:d
 $query = $dbh->prepare($sql);
 $query->bindParam(':uniqueid',$uniqueid,PDO::PARAM_STR);
 $query->bindParam(':diseasename',$diseasename,PDO::PARAM_STR);
-$query->bindParam(':cause',$cause,PDO::PARAM_STR); 
+$query->bindParam(':cause',$cause,PDO::PARAM_STR);
 $query->execute();
+
+
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
