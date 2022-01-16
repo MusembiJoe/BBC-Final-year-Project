@@ -23,6 +23,7 @@ if(strlen($_SESSION['alogin'])=="")
         <link rel="stylesheet" type="text/css" href="js/DataTables/datatables.min.css"/>
         <link rel="stylesheet" href="css/form-content.css" media="screen" >
         <link rel="stylesheet" href="css/main.css" media="screen" >
+
         <script src="js/modernizr/modernizr.min.js"></script>
           <style>
         .errorWrap {
@@ -79,14 +80,14 @@ h5{
 
                                             <div class="panel-body p-20">
 
-                                                <table id="example"  cellspacing="0" width="100%">
-                                                    <thead>
+                                                <table id=""  class="table table-bordered" >
+                                                    <thead class="thead-primary">
                                                         <tr>
-                                                            <th class="result-color1">#</th>
-                                                            <th class="result-color1">Symptoms ID</th>
-                                                            <th class="result-color1">Symptoms Name </th>
-                                                            <th class="result-color1">Disease ID</th>
-                                                            <th class="result-color1">Action</th>
+                                                            <th scope="col">#</th>
+                                                            <th scope="col">Symptoms ID</th>
+                                                            <th scope="col">Symptoms Name </th>
+                                                            <th scope="col">Disease ID</th>
+                                                            <th scope="col">Action</th>
                                                         </tr>
                                                     </thead>
   
@@ -101,14 +102,14 @@ if($query->rowCount() > 0)
 foreach($results as $result)
 {   ?>
 <tr>
- <!-- <td><?php echo htmlentities($cnt);?></td> --><td class="result-color1"><?php echo htmlentities($result->id);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->symptoms_id);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->symptoms_name);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->disease_id);?></td>
+ <!-- <td><?php echo htmlentities($cnt);?></td> --><th scope="col"><?php echo htmlentities($result->id);?></th>
+                                                            <td><?php echo htmlentities($result->symptoms_id);?></td>
+                                                            <td><?php echo htmlentities($result->symptoms_name);?></td>
+                                                            <td><?php echo htmlentities($result->disease_id);?></td>
 
-<td class="result-color1">
-<a href="edit_symptoms.php?stid=<?php echo htmlentities($result->id);?>"><i class="far fa-edit" title="Edit"></i></a>
-<a href="delete_symptoms.php?stid=<?php echo htmlentities($result->id);?>"onclick="return confirm('Are you sure you want to delete this item?');"><i class="fas fa-trash-alt" title="Delete"></i></a>
+<td>
+<a class="btn btn-primary" href="edit_symptoms.php?stid=<?php echo htmlentities($result->id);?>">Edit</a>
+<a class="btn btn-danger mt-2 " href="delete_symptoms.php?stid=<?php echo htmlentities($result->id);?>"onclick="return confirm('Are you sure you want to delete this item?');">Delete</i></a>
 
 </td>
 </tr>

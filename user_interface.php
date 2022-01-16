@@ -33,6 +33,7 @@ if(strlen($_SESSION['alogin'])=="")
         <link rel="stylesheet" type="text/css" href="js/DataTables/datatables.min.css"/>
         <link rel="stylesheet" href="css/main.css" media="screen" >
         <link rel="stylesheet" href="css/all.min.css" media="screen" > 
+         
   <title>Poultry Disease Prediction and Diagnosis System ||User DashBoard </title>
   
 
@@ -44,6 +45,8 @@ if(strlen($_SESSION['alogin'])=="")
         <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" >
         <link rel="stylesheet" type="text/css" href="js/DataTables/datatables.min.css"/>
         <link rel="stylesheet" href="css/main.css" media="screen" >
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="js/modernizr/modernizr.min.js"></script>
 
 
@@ -118,6 +121,8 @@ flex-wrap: wrap;
 
 </head>
 
+
+
 <body>
         <div class="main-wrapper">
 
@@ -130,11 +135,36 @@ flex-wrap: wrap;
                     <?php include('link/user-leftbar.php');?>
 
 
+<div class="w3-content w3-section w3-green" style="width:150%">
+        
+      
+        <img class="mySlides" src="images/kuku1.jpg" style="width:100%">
+        <img class="mySlides" src="images/kuku3.jpg" sstyle="width:100%">
+        <img class="mySlides" src="images/kuku5.png" style="width:100%">
+        <img class="mySlides" src="images/kuku6.png" style="width:100%">
+        <img class="mySlides" src="images/kuku7.png" style="width:100%">
 
-<div class="flex-p">
-  <div class="content-p">
-<div id="organswrapper">
-    <div id="frt_base">
+        <script>
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+      </script>
+      </div>
+    <div class="w3-container" >
+      </div>
+
+    <!-- <div id="frt_base">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1100px" height="1370" viewBox="0 0 1390 1370" xml:space="preserve">
             <image overflow="visible" width="750" height="1370" xlink:href="images/male.png" ></image>
 
@@ -176,12 +206,12 @@ flex-wrap: wrap;
 <a href="ankle-symptoms1.php"> <path id="frt_32" d="M419.333,1198.501c-2.167,6.167-3.166,21-2.666,22.667s0.833,9.333-1,13.499s-1.667,13.334-0.667,21.5c6-13.583,37-29.917,50-23.667c-2-5.5-2.25-5.75-1-9.25s2.25-12,1.5-16.25C462,1191.5,426,1194,419.333,1198.501z"/></a>
 <a href="foot-symptoms1.php"> <path id="frt_33" d="M261.979,1232.008c-1.15,7.047-6.68,15.393-10.854,23.742c-4.375,8.75-13,19.375-21,28.25s-10.375,26.375-10.125,29.5s3.125,5.875,6.125,5.5c0,1.125,1,2.875,4.25,2.5c0.25,2,0,6.25,8.25,5c4,4.875,7.875,4.625,10.75,1.75c5.292,6.314,10.383,6.492,15.75,5.809c4.375-0.558,11.125-7.809,12.25-10.559s2.25-3.875,5.875-6.75c1.972-1.563,3.795-4.086,5.156-8.824c1.141-3.973,1.957-10.098,2.261-12.758c0.667-5.833,0.667-10.834,4.5-21.334c8.667-3.667,14-10.333,15.5-18.833c0.113-0.642,0.215-1.28,0.311-1.918C302.221,1240.676,274.645,1227.585,261.979,1232.008z"/></a>
 <a href="foot-symptoms1.php"><path id="frt_34" d="M415,1256.167c1,8.166,12,15,15,16.5s3,4.167,3.833,7s2.834,10.667,3.834,21s6.25,15.749,8.666,17.666s2.834,3,3.667,4.667s3.417,6.083,11.167,9.75s14.999-1.167,16.749-4.75c4.5,4.5,11.084,0.416,12.25-2.084c4.916,1.416,7.834-3.25,7.917-5.166c1.583,0.334,3.584-1.082,4.25-2.582c0.833,0.334,2.5,0.666,5-3.334s-3-17.5-4.167-21.667s-9.666-14.833-16.333-21.833s-7.833-11.333-12.5-18.667S467,1238,465,1232.5C452,1226.25,421,1242.584,415,1256.167z"/></a>
-
+ --> 
 
             <!-- <rect class="go_bck go_bck_malefemale" x="587.5" y="1023.5" fill="#72B8FC" stroke="#6a6a6a" vector-effect="non-scaling-stroke" width="287" height="272"/> -->
 
-
-        </svg>
+<!-- 
+        </svg> -->
   <!--  </div>
 
     <div id="bck_base">
@@ -247,7 +277,7 @@ flex-wrap: wrap;
 
 
 
-  <div class="scroll-top"><span class="scroll-top-icon"></span></div>
+  <!-- <div class="scroll-top"><span class="scroll-top-icon"></span></div>
 
 <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -265,7 +295,7 @@ flex-wrap: wrap;
       </div>
     </div>
   </div> 
-</div><!-- end mymodal -->
+</div>end mymodal -->
 
   <span id="organs-tip"></span>
 

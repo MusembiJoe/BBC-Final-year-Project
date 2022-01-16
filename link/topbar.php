@@ -21,7 +21,7 @@
                     <div class="row">
                         <div class="navbar-header w3-dark-grey">
                 			<a class="navbar-brand text-white" href="admin_edit_choice.php">
-                			    Admin Dashboard 
+                			    Kukutreat
                 			</a>
                             <span class="small-nav-handle hidden-sm hidden-xs"></span>
                 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">

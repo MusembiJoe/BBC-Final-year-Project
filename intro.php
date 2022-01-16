@@ -148,7 +148,7 @@ li{
 <div class="content-p">
    
  <ul> <li><h2>HELLO !!!</h2></li>
-     <li><p>Welcome to This platform, It offers an accurate , efficient and effective way to carry out Poultry diagnosis. Hope you fond it helpful.. ENJOY THE EXPERIENCE!!&nbsp&nbsp</p></li>
+     <li><p>Welcome to This platform, It offers an accurate , efficient and effective way to carry out Poultry diagnosis. Hope you find it helpful.. ENJOY THE EXPERIENCE!!&nbsp&nbsp</p></li>
 
 </ul>
 
@@ -166,7 +166,7 @@ li{
 <li><a href="index.php" ><button><<</button></li>
 </div>
 <div class="flex-p-2">
-<li><a href="policy.php" ><button>NEXT</button></li>
+
  <li><a><button onclick="document.getElementById('0303').style.display='block'" style="width:auto;">Register</button></a></li>
  <li><a><button onclick="document.getElementById('1111111111').style.display='block'" style="width:auto;">Login</button></a></li>
  <!-- class="homepage-button" -->

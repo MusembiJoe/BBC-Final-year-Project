@@ -25,6 +25,19 @@
 
                         
                 				<li class="hidden-xs hidden-xs"><!-- <a href="#">My Tasks</a> --></li>
+
+                            </ul>
+                            <!-- /.nav navbar-nav -->
+
+                            <ul class="nav navbar-nav navbar-center" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+
+
+                                <li><a href="intro.php " class="color-danger text-center">Home</a></li>
+
+
+
+                            </ul>
+
                                
                 			</ul>
                             <!-- /.nav navbar-nav -->

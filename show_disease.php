@@ -23,9 +23,9 @@ if(strlen($_SESSION['alogin'])=="")
         <link rel="stylesheet" type="text/css" href="js/DataTables/datatables.min.css"/>
         <link rel="stylesheet" href="css/form-content.css" media="screen" >
         <link rel="stylesheet" href="css/main.css" media="screen" >
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
         <script src="js/modernizr/modernizr.min.js"></script>
-<!--          <style>-->
+         <style>-->
 <!--        .errorWrap {-->
 <!--    padding: 10px;-->
 <!--    margin: 0 0 20px 0;-->
@@ -53,7 +53,7 @@ if(strlen($_SESSION['alogin'])=="")
 <!--    background-color:white;-->
 <!--    font-weight:900;-->
 <!--}-->
-<!--        </style>-->
+<!--        </style>
     </head>
     <body class="top-navbar-fixed">
         <div class="main-wrapper">

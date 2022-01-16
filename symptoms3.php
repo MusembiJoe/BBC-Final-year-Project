@@ -93,8 +93,8 @@ foreach($results as $result)
 <tr>
  <!-- <?php echo htmlentities($cnt);?> -->
 
-   <td class="result-color1">&nbsp"<?php echo htmlentities($result->symptoms_name);?>"?</td>
-   <td class="result-color1"><input type="radio" name="<?php echo htmlentities($cnt);?>" value="Yes" required>Yes  &nbsp &nbsp <input type="radio" name="<?php echo htmlentities($cnt);?>" value="No" required>No </td>
+   <td>&nbsp"<?php echo htmlentities($result->symptoms_name);?>"?</td>
+   <td><input type="radio" name="<?php echo htmlentities($cnt);?>" value="Yes" required>Yes  &nbsp &nbsp <input type="radio" name="<?php echo htmlentities($cnt);?>" value="No" required>No </td>
 
 
 

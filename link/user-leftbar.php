@@ -1,6 +1,7 @@
 <!Doctype html>
 <head>
 <link rel="stylesheet" href="css/all.min.css" media="screen" >
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style> 
 .left-sidebar{ 
     background-color:white;
@@ -23,12 +24,9 @@
                             </div>
                             <!-- /.user-info -->
 
-                            <div class="sidebar-nav">
+                            <div class="w3-sidebar w3-gray w3-bar" style="width:20%">
                                 <ul class="side-nav color-gray">
-                                    <li> 
-                                        <a href="admin_edit_choice.php"> <span>Dashboard</span> </a> 
-                                     
-                                    </li>
+                                  
 
 
                                     <li class="has-children">
@@ -36,7 +34,10 @@
                                             <li><a href="change-password-user.php"> <span>CHANGE PASSWORD</span></a></li>
                                             <li><a href="change-name-user.php"> <span>CHANGE YOUR NAME</span></a></li>
                                             <li><a href="previous-result.php"> <span>SEE PREVIOUS RESULT</span></a></li>
-                                            <!-- <li><a href="user-details.php"></i><span>USER DETAILS</span></a></li> -->
+                                            <div class="w3-container">
+                                             <a class="w3-button w3-block w3-green" href="symptoms1.php">Select symptoms</a>
+                                             </div>
+                                          
                                 
                                         </ul>
                                     </li>

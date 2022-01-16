@@ -85,14 +85,14 @@ else if($error){?>
                                         <?php } ?>
                                             <div class="panel-body p-20">
 
-                                                <table id="example"  cellspacing="0" width="100%">
-                                                    <thead>
+                                                <    <table id="example"  class="table table-bordered" >
+                                                <thead class="thead-dark">
                                                         <tr>
                                                              
-                                                            <th class="result-color1">User Id</th>  
-                                                            <th class="result-color1">User Name </th>
-                                                            <th class="result-color1">Contact </th>
-                                                             <th class="result-color1">Registration Date</th>
+                                                            <th scope="col">User Id</th>  
+                                                            <th scope="col">User Name </th>
+                                                            <th scope="col">Contact </th>
+                                                             <th scope="col">Registration Date</th>
                                                   
                                                     
                 
@@ -111,10 +111,10 @@ foreach($results as $result)
 {   ?> 
 <tr> 
  <!-- <td><?php echo htmlentities($cnt);?></td> -->
-                                                            <td class="result-color1"><?php echo htmlentities($result->id);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->user_name);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->contact);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->reg_date);?></td>
+                                                            <td scope="col"><?php echo htmlentities($result->id);?></td>
+                                                            <td scope="col"><?php echo htmlentities($result->user_name);?></td>
+                                                            <td scope="col"><?php echo htmlentities($result->contact);?></td>
+                                                            <td scope="col"><?php echo htmlentities($result->reg_date);?></td>
                                                         
                                                            
 

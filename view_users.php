@@ -96,16 +96,16 @@ else if($error){?>
                                         <?php } ?>
                                             <div class="panel-body p-20">
 
-                                                <table id="example"  cellspacing="0" width="100%">
-                                                    <thead>
+                                                <<table id="example"  class="table table-bordered" >
+                                                <thead class="thead-dark">
                                                         <tr>
                                                             
-                                                            <th class="result-color1">User Id</th>  
-                                                            <th class="result-color1">User Name </th>
-                                                            <th class="result-color1">Contact </th>
-                                                             <th class="result-color1">Registration Date</th>
-                                                             <th class="result-color1">Result</th>
-                                                            <th class="result-color1">Action</th>
+                                                            <th scope="col">User Id</th>  
+                                                            <th scope="col">User Name </th>
+                                                            <th scope="col">Contact </th>
+                                                             <th scope="col">Registration Date</th>
+                                                             <th scope="col">Result</th>
+                                                            <th scope="col">Action</th>
                 
                                                         </tr> 
                                                     </thead>
@@ -122,16 +122,16 @@ foreach($results as $result)
 {   ?> 
 <tr> 
  <!-- <td><?php echo htmlentities($cnt);?></td> -->
-                                                            <td class="result-color1"><?php echo htmlentities($result->id);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->user_name);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->contact);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->reg_date);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->result);?></td>
+                                                            <td ><?php echo htmlentities($result->id);?></td>
+                                                            <td ><?php echo htmlentities($result->user_name);?></td>
+                                                            <td ><?php echo htmlentities($result->contact);?></td>
+                                                            <td ><?php echo htmlentities($result->reg_date);?></td>
+                                                            <td ><?php echo htmlentities($result->result);?></td>
                                                            
 
-<td class="result-color1">
+<td>
 <!-- <button><a href="edit_users.php?stid=<?php echo htmlentities($result->id);?>"><i title="EDIT">EDIT</i></a> </button> -->
-<a href="delete_users.php?stid=<?php echo htmlentities($result->id);?>"onclick="return confirm('Are you sure you want to delete this item?');"><i class="fas fa-trash-alt" title="Delete"></i></a>
+<a class="btn btn-danger mt-2 " href="delete_users.php?stid=<?php echo htmlentities($result->id);?>"onclick="return confirm('Are you sure you want to delete this item?');">Delete</i></a>
 
 </td>
 </tr>

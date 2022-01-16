@@ -9,12 +9,11 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" >
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/login.css">
-
+       
  
         <style>
 
 button{
-    cursor:pointer;
 }
 
 </style>
@@ -30,9 +29,9 @@ button{
         <section class="container content">
             <div class="hompage">
             
-            <h2>Welcome To Kukutreat ?</h2>
+            <h2>Welcome To Kukutreat </h2>
             <p>Check your poultry symptoms and find out what could be
-                causing them ,It's fast, effective and efficient.
+                causing them ,It's fast,effective and efficient.
             </p>
             <ul>
             <li><button class="homepage-button"onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a>Login as Admin</a></button></li>

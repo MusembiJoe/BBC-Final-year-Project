@@ -157,7 +157,7 @@ if(strlen($_SESSION['alogin'])=="")
 
 
       <div class="w3-content w3-section w3-green" style="width:100%">
-          <h1>Welcome</h1>
+        
       
       <img class="mySlides" src="images/kuku1.jpg" style="width:100%">
       <img class="mySlides" src="images/kuku3.jpg" sstyle="width:100%">
@@ -184,17 +184,9 @@ if(strlen($_SESSION['alogin'])=="")
       </script>
       </div>
     <div class="w3-container" >
-        <p>At the very bottom of our CSS stylesheet you will find all the codes related to our fixed top navigation. The container spans 100% of the page width so that we see the bar appear across the whole screen. But the internal UL object holds all the links centered at the same position as our content. Also the background color is applied using rgba() syntax for alpha-transparency.First we should create the project workspace and build the original HTML code. It’s worth noting we will need to use some very basic jQuery along with the CSS effects.
-
-            Create a new set of documents named index.html and styles.css within the same directory. I am using a custom background image and logo banner in the header section. You may download these resources along with my source code if you want to save time. Now in the main index file we need to setup an HTML5 doctype plus add the related links.When designing a navigation system for your website it is important to consider dynamic alterations for handling mobile support and responsive designs. But another systematic approach is to keep your visitors in full control throughout the entire viewing process. This often requires a quick-to-access menu or dropdown area for pulling links to other webpages.
-
-            In this tutorial I’m going to be building a top navigation bar which appears only after moving beyond the header navigation. This effect is great if you have a few pages which are most commonly accessed by visitors. The sticky navbar will stay fixed at the top of the screen and only disappear when re-entering the header nav zone. To get an idea of what we will be making check out my live demo example after the jump!Just like humans, chickens will get poorly from time to time and will need some TLC from you (their owners). As a chicken keeper you will inevitably come to find a droopy hen looking very sorry for herself. Chickens aren’t very good at hiding when they are feeling a little unwell, so you will know fairly early on if there is a problem.</p>
-    </div>
-
-      <div class="w3-container">
-          <a class="w3-button w3-block w3-green" href="symptoms1.php">Select symptoms</a>
       </div>
-</body>
+
+      </body>
       </html>
 
 
@@ -370,8 +362,8 @@ if(strlen($_SESSION['alogin'])=="")
 </script>
 </body>
 
-    <div class="w3-container w3-teal">
-        <h5 styl="">Footer</h5>
-    </div>
+    <!-- <div class="w3-container w3-red">
+        <h5 styl=""Footer</h5>
+    </div> -->
     </html>
 <?PHP } ?>

@@ -97,17 +97,17 @@ else if($error){?>
                                         <?php } ?>
                                             <div class="panel-body p-20">
 
-                                                <table id="example" cellspacing="0" width="100%">
-                                                    <thead>
+                                            <<table id="example"  class="table table-bordered" >
+                                                <thead class="thead-dark">
                                                         <tr>
                                                             
-                                                            <th class="result-color1">User Id</th>  
-                                                            <th class="result-color1">Name</th>
-                                                            <th class="result-color1">Experience</th>
-                                                            <th class="result-color1">Messages</th>
-                                                            <th class="result-color1">Email</th>
-                                                            <th class="result-color1">Checking Date</th>
-                                                            <th class="result-color1">Action</th>
+                                                            <th scope="col">User Id</th>  
+                                                            <th scope="col">Name</th>
+                                                            <th scope="col">Experience</th>
+                                                            <th scope="col">Messages</th>
+                                                            <th scope="col">Email</th>
+                                                            <th scope="col">Checking Date</th>
+                                                            <th scope="col">Action</th>
                                                         </tr> 
                                                     </thead>
    
@@ -123,20 +123,20 @@ foreach($results as $result)
 {   ?> 
 <tr> 
  <!-- <td><?php echo htmlentities($cnt);?></td> -->
-                                                            <td class="result-color1"><?php echo htmlentities($result->id);?></td>
-                                                            <td class="result-color1"> <?php echo htmlentities($result->name);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->experience);?></td>
-                                                            <td class="result-color1"><?php echo htmlentities($result->comments);?></td>
-                                                            <td class="result-color1"> <?php echo htmlentities($result->email);?></td>
+                                                            <td ><?php echo htmlentities($result->id);?></td>
+                                                            <td > <?php echo htmlentities($result->name);?></td>
+                                                            <td ><?php echo htmlentities($result->experience);?></td>
+                                                            <td ><?php echo htmlentities($result->comments);?></td>
+                                                            <td > <?php echo htmlentities($result->email);?></td>
                                                             
                                                           
-                                                            <td class="result-color1"><?php echo htmlentities($result->c_date);?></td>
+                                                            <td ><?php echo htmlentities($result->c_date);?></td>
                                                           
                                                            
 
-<td class="result-color1">
+<td >
 <!-- <button><a href="edit_users.php?stid=<?php echo htmlentities($result->id);?>"><i title="EDIT">EDIT</i></a> </button> -->
-<a href="delete-feedback.php?stid=<?php echo htmlentities($result->id);?>"onclick="return confirm('Are you sure you want to delete this item?');"><i class="fas fa-trash-alt" title="Delete"></i></a>
+<a class="btn btn-danger mt-2" href="delete-feedback.php?stid=<?php echo htmlentities($result->id);?>"onclick="return confirm('Are you sure you want to delete this item?');">Delete</a>
 
 </td>
 </tr>

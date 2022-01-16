@@ -26,8 +26,8 @@
                             </div>
                             <!-- /.user-info -->
 
-                             <div class="w3-sidebar w3-amber w3-bar" style="width:25%">
-                                <ul class="side-nav color-blue">
+                             <div class="w3-sidebar w3-gray w3-bar" style="width:20%">
+                                <ul class="side-nav color-gray">
                                     <li>
                                         <a href="admin_edit_choice.php" class="w3-bar-item> <span>Dashboard</span> </a>
                                      
@@ -40,12 +40,14 @@
                                             <li><a href="add_symptoms.php"> <span>ADD SYMPTOMS</span></a></li>
                                             <li><a href="add_disease.php"></i><span>ADD DISEASE</span></a></li>
                                             <li><a href="add-admin.php"></i><span>ADD ADMIN</span></a></li>
-                                            <li><a href="teerms.php" onclick="return confirm('Redirecting to you as a general user .');"></i> <span>ADMIN CHECKUPS</span></a></li>
+                                            <!-- <li><a href="teerms.php" onclick="return confirm('Redirecting to you as a general user .');"></i> <span>ADMIN CHECKUPS</span></a></li> -->
                                             <li><a href="show-feedback.php"></i> <span>FEEDBACK</span></a></li>
                                             <li><a href="view_users.php"></i> <span>VIEW USERS </span></a></li>
                                             <li><a href="change_password_admin.php"></i> <span>CHANGE PASSWORD </span></a></li>
                                             <li><a href="change-admin-name.php"></i> <span>CHANGE YOUR NAME</span></a></li>
-
+                                            <div class="w3-container">
+                                             <a class="w3-button w3-block w3-green" href="symptoms1.php">Select symptoms</a>
+                                             </div>
                                            
                                         </ul>
                                     </li>

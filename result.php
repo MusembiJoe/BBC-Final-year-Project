@@ -533,6 +533,11 @@ foreach($results as $result)
            </div>
        </div>
 
+       <div class="flex-p-inside">
+        <div class="flex-p-2">
+            <li><a href="admin_edit_choice.php" ><button><<</button></li>
+        </div>
+    </div>
 
      <div class="flex-p-inside">
 
@@ -544,6 +549,7 @@ foreach($results as $result)
 
       </div>
 
+     
 
             <!-- /.main-wrapper -->
         <script src="js/jquery-2.2.4.min.js"></script>

@@ -114,6 +114,34 @@ else if($error){?>
                                         <?php } ?>
                                                 <form class="form-horizontal" method="post">
 
+                                                    <div class="form-group">
+                                                        <label for="default" class="col-sm-2 control-label">Edit Symptoms ID</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="number" name="uniqueid" class="form-control" id="fullanme"  value="<?php echo htmlentities($result->symptoms_id)?>" required="required" autocomplete="off">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="default" class="col-sm-2 control-label">Edit Symptoms Name </label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" name="fullanme" class="form-control" id="fullanme" value="<?php echo htmlentities($result->symptoms_name)?>" required="required" autocomplete="off">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="default" class="col-sm-2 control-label">Edit Disease ID </label>
+                                                        <div class="col-sm-10">
+                                                            <input type="number" name="cause" class="form-control" id="fullanme"  value="<?php echo htmlentities($result->disease_id)?>" required="required" autocomplete="off">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-2 col-sm-10">
+                                                            <button type="submit" name="submit" class="result-color1">Edit</button>
+
+                                                        </div>
+
+                                                    </div>
  <?php 
 
 $sql = "SELECT * from symptoms_tb where id=$stid";
@@ -129,36 +157,11 @@ foreach($results as $result)
      ?> 
 
 
- <div class="form-group">
-<label for="default" class="col-sm-2 control-label">Edit Symptoms ID</label>
-<div class="col-sm-10">
-<input type="number" name="uniqueid" class="form-control" id="fullanme"  value="<?php echo htmlentities($result->symptoms_id)?>" required="required" autocomplete="off">
-</div>
-</div>
 
-<div class="form-group">
-<label for="default" class="col-sm-2 control-label">Edit Symptoms Name </label>
-<div class="col-sm-10">
-<input type="text" name="fullanme" class="form-control" id="fullanme" value="<?php echo htmlentities($result->symptoms_name)?>" required="required" autocomplete="off">
-</div>
-</div>
-
-<div class="form-group">
-<label for="default" class="col-sm-2 control-label">Edit Disease ID </label>
-<div class="col-sm-10">
-<input type="number" name="cause" class="form-control" id="fullanme"  value="<?php echo htmlentities($result->disease_id)?>" required="required" autocomplete="off">
-</div>
-</div>
 
 <?php }} ?>     
 
-                                                    <div class="form-group">
-                                                        <div class="col-sm-offset-2 col-sm-10">
-                                                            <button type="submit" name="submit" class="result-color1">Edit</button>
-                                                        
-                                                        </div>
-                
-                                                    </div>
+
                                                 </form>
 
                                             </div>
